@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_cart"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/background_light"
+                    android:backgroundTint="@android:color/background_light"
+                    android:enabled="true"
+                    android:text="PLACE ORDER"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:clickable="false"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="CITY"
+                android:inputType="textPostalAddress"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:clickable="false"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtLocality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:hint="STREET/LOCALITY"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="140dp"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtFlatNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FLAT/HOUSE NUMBER (Optional)"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="200dp"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NEARBY LANDMARK"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="260dp"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YOUR GOOD NAME"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="320dp"
+            android:theme="@style/TextLabel"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PHONE"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

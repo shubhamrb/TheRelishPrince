@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_festive"
+            android:icon="@drawable/festive"
+            android:title="FESTIVE FOODS" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="CART" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/orders"
+            android:title="ORDERS" />
+    </group>
+
+    <item android:title="Communicate"
+        android:color="@color/colorAccent">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="SHARE" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate"
+                android:title="RATE US" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="FEEDBACK" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="ABOUT US" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TheRelishPrince</string>
+    <string name="phone_number">Phone number...</string>
+    <string name="hint">hint</string>
+    <string name="todo">TODO</string>
+    <string name="password">Password....</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="web_client_id">938315724116-84cea27s74bonkf4nc4m4cspk8a6d0kc.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pizzafragment">PizzaFragment</string>
+    <string name="title_activity_home_drawer">homeDrawer</string>
+    <string name="otp">OTP...</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="or_click_below_to_login_with_gmail">OR Click below to Login with GMAIL</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="the_relish_prince">The Relish Prince</string>
+    <string name="our_vision_with_ultimate_taste_and_relishing_freshness_and_ensuring_superior_customer_experience_by_providing_highest_standards_of_product_quality_and_service">Our Vision- With Ultimate Taste And Relishing Freshness And Ensuring Superior Customer Experience By Providing Highest Standards Of Product Quality and Service.</string>
+    <string name="we_basically_have_total_5_categories_pizzas_beverages_burgers_paratha_cutlets_and_the_last_one_with_pasta_maggie_veg_biryani">We basically have Total 5 Categories- Pizzas, Beverages, Burgers, Paratha Cutlets, And the last one with Pasta/Maggie/Veg Biryani.</string>
+    <string name="our_mission_is_to_provide_the_most_delicious_and_quality_food_with_an_aspiration_to_make_our_food_the_best_across_the_nation">Our Mission Is To Provide The Most Delicious And Quality Food With An Aspiration To Make Our Food The Best Across The Nation.</string>
+    <string name="about_the_relish_prince">ABOUT THE RELISH PRINCE</string>
+</resources>

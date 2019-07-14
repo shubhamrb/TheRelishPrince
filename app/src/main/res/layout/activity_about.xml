@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:text="@string/about_the_relish_prince"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textMission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_cart"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/our_mission_is_to_provide_the_most_delicious_and_quality_food_with_an_aspiration_to_make_our_food_the_best_across_the_nation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textVision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_cart"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        android:text="@string/our_vision_with_ultimate_taste_and_relishing_freshness_and_ensuring_superior_customer_experience_by_providing_highest_standards_of_product_quality_and_service"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_cart"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/we_basically_have_total_5_categories_pizzas_beverages_burgers_paratha_cutlets_and_the_last_one_with_pasta_maggie_veg_biryani"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+</LinearLayout>
